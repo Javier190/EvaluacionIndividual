@@ -14,7 +14,6 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-
     private EditText et1;
     private EditText et2;
     private ListView listview;
@@ -36,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
         AdminBD = new AdminSQLite(getApplicationContext());               //Obtener el contexto es util mas que nada cuando queremos hacer algo en una activity que no es la de Inicio, pero de todas formas es bueno especificar donde esta
         AdminBD.abrirBaseDeDatos();
-        AdminBD.seleccionDatos();
+        AdminBD.seleccionDatos();           //la verdad no estoy seguro si este metodo hace diferencia aqui
 
     }
 
